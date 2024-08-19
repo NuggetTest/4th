@@ -62,7 +62,7 @@ const Blob = ({ houses }) => {
   }, []);
 
   return (
-    <div
+    <div className='blob'
       onTouchMove={handleTouchMove}
       style={{
         position: 'absolute',
@@ -71,10 +71,10 @@ const Blob = ({ houses }) => {
         transform: 'translate(-50%, -50%)',
         width: '100px',
         height: '100px',
-        backgroundColor: 'cornflowerblue',
         borderRadius: '50%',
-      }}
-    />
+      }}>
+       <img className='blobphoto' src="/simbu.jpg" alt="simbu" />
+    </div>
   );
 };
 

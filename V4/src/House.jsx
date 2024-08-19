@@ -9,11 +9,14 @@ const House = ({ position, onTouch }) => {
         left: `${position.x}%`,
         width: '80px',
         height: '80px',
-        backgroundColor: 'lightcoral',
-        borderRadius: '10px',
+        borderRadius: '50px',
+        overflow: 'hidden',
+
       }}
       onTouchStart={onTouch}
-    />
+    >
+        <img className='blobphoto' src="/ball.png" alt="ball"/>
+    </div>
   );
 };
 

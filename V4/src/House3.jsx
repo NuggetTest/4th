@@ -1,13 +1,15 @@
 import React from 'react';
 
-const House2 = () => {
+const HousePage1 = () => {
   return (
-    <div style={{ textAlign: 'center', marginTop: '50px' }}>
-      <h1>Welcome to House 2</h1>
-      <p>This house has a grand library.</p>
-      {/* Add more unique content here */}
+    <div>
+      <h1>Welcome to House 1</h1>
+      <p>Click the button below to view the special content:</p>
+      <a href="/house3.html" target="_blank" rel="noopener noreferrer">
+        <button>View Content</button>
+      </a>
     </div>
   );
 };
 
-export default House2;
+export default HousePage1;
