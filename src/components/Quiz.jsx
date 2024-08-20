@@ -38,12 +38,12 @@ const quizData = [
     {
         question: "Which house would you choose?",
         options: [
-          { type: "image", content: "/Screenshot_20240819_211804_Instagram.jpg" },
-          { type: "image", content: "/Screenshot_20240819_211808_Instagram.jpg" },
-          { type: "image", content: "/Screenshot_20240819_211814_Instagram.jpg" },
-          { type: "image", content: "/Screenshot_20240819_211823_Instagram.jpg" }
+          { type: "image", content: "/black.jpg" },
+          { type: "image", content: "/white.jpg" },
+          { type: "image", content: "/green.jpg" },
+          { type: "image", content: "/purple.jpg" }
         ],
-        correctAnswer: "/Screenshot_20240819_211814_Instagram.jpg"
+        correctAnswer: "/white.jpg"
       }
   ];
   
