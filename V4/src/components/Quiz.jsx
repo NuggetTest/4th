@@ -19,7 +19,8 @@ const quizData = [
         { type: "text", content: "Valorant" },
         { type: "text", content: "Bowling" },
         { type: "text", content: "Word making game" },
-        { type: "text", content: "Scribble" }
+        { type: "text", content: "Scribble" },
+        { type: "text", content: "Ludo" }
       ],
       correctAnswer: "Scribble"
     },
@@ -80,28 +81,29 @@ const quizData = [
   
     return (
       <div className="quiz-container">
-        <h1>Match my freak</h1>
-        <h3>Answer each question and we'll match if we answered the same</h3>
+        <img src="/flower.png" alt="flower" style={{position: 'absolute', top: '-70px', left: '-100px', scale: '0.7'}}/>
+        <h1 className='title'>Match my freak</h1>
+        <h2>Answer each question and we'll match if we answered the same</h2>
         <div className="question-container">
           <p>{quizData[currentQuestionIndex].question}</p>
         </div>
         <div className="options-container">
-        {quizData[currentQuestionIndex].options.map((option, index) => (
-            <button
-            key={index}
-            className={`option-button ${selectedOption === option.content ? 'selected' : ''}`}
-            onClick={() => handleOptionClick(option)}
-            disabled={!!selectedOption}
-            >
-            {option.type === "text" ? (
-                option.content
-            ) : (
-                <div className='image-container'>
-                <img className='image' src={option.content} alt={`Option ${index + 1}`} />
-                </div>
-            )}
-            </button>
-        ))}
+          {quizData[currentQuestionIndex].options.map((option, index) => (
+              <button
+              key={index}
+              className={`option-button ${selectedOption === option.content ? 'selected' : ''}`}
+              onClick={() => handleOptionClick(option)}
+              disabled={!!selectedOption}
+              >
+              {option.type === "text" ? (
+                  option.content
+              ) : (
+                  <div className='image-container'>
+                    <img className='image' src={option.content} alt={`Option ${index + 1}`} />
+                  </div>
+              )}
+              </button>
+          ))}
         </div>
         
         {showPopup && (

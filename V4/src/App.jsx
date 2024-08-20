@@ -2,7 +2,7 @@ import React from 'react';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 import Blob from './Blob';
 import House from './House';
-import House3 from './House3';
+import Unscramble from './components/Unscramble';
 import Crossword from './components/Crossword';
 import Quiz from './components/Quiz';
 import './index.css';
@@ -24,12 +24,12 @@ function App() {
     <>
     <div className='home-page'>
       <Routes>
-        <Route path="/" element={<><div><Blob houses={houses} />{houses.map((house, index) => (<House key={index} position={house.position} onTouch={house.onTouch} />))}</div><div style={{position: 'absolute', top: '120px', left: '50%', transform: 'translateX(-50%)', color: 'lightgreen', fontSize: '30px'}}>
+        <Route path="/" element={<><div><Blob houses={houses} />{houses.map((house, index) => (<House key={index} position={house.position} onTouch={house.onTouch} />))}</div><div style={{position: 'absolute', top: '120px', left: '50%', transform: 'translateX(-50%)', color: 'lightgreen', textShadow: '0 5px 5px #000', fontSize: '30px'}}>
             Move simbu with arrow keys to help him play
         </div></>} />
         <Route path="/house1" element={<Crossword />} />
         <Route path="/house2" element={<Quiz />} />
-        <Route path="/house3" element={<House3 />} />
+        <Route path="/house3" element={<Unscramble />} />
       </Routes>
     </div>
     
