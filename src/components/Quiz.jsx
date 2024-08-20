@@ -27,8 +27,8 @@ const quizData = [
     {
       question: "Which date did you like the most out of these?",
       options: [
-        { type: "image", content: "src/images/car.jpg" },
-        { type: "image", content: "src/images/humayun.jpg" },
+        { type: "image", content: "./src/images/car.jpg" },
+        { type: "image", content: "./src/images/humayun.jpg" },
         { type: "image", content: "src/images/pizza.jpg" },
         { type: "image", content: "src/images/shoes.jpg" }, 
         { type: "image", content: "src/images/ramen.jpg" } 
