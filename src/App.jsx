@@ -2,9 +2,9 @@ import React from 'react';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 import Blob from './Blob';
 import House from './House';
-import Unscramble from './components/Unscramble';
-import Crossword from './components/Crossword';
-import Quiz from './components/Quiz';
+import Unscramble from './components/Unscramble.jsx';
+import Crossword from './components/Crossword.jsx';
+import Quiz from './components/Quiz.jsx';
 import './index.css';
 
 function App() {
