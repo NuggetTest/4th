@@ -27,23 +27,23 @@ const quizData = [
     {
       question: "Which date did you like the most out of these?",
       options: [
-        { type: "image", content: "./src/images/car.jpg" },
-        { type: "image", content: "./src/images/humayun.jpg" },
-        { type: "image", content: "src/images/pizza.jpg" },
-        { type: "image", content: "src/images/shoes.jpg" }, 
-        { type: "image", content: "src/images/ramen.jpg" } 
+        { type: "image", content: "/car.jpg" },
+        { type: "image", content: "/humayun.jpg" },
+        { type: "image", content: "/pizza.jpg" },
+        { type: "image", content: "/shoes.jpg" }, 
+        { type: "image", content: "/ramen.jpg" } 
       ],
-      correctAnswer: "src/images/humayun.jpg"
+      correctAnswer: "/humayun.jpg"
     },
     {
         question: "Which house would you choose?",
         options: [
-          { type: "image", content: "src/images/Screenshot_20240819_211804_Instagram.jpg" },
-          { type: "image", content: "src/images/Screenshot_20240819_211808_Instagram.jpg" },
-          { type: "image", content: "src/images/Screenshot_20240819_211814_Instagram.jpg" },
-          { type: "image", content: "src/images/Screenshot_20240819_211823_Instagram.jpg" }
+          { type: "image", content: "/Screenshot_20240819_211804_Instagram.jpg" },
+          { type: "image", content: "/Screenshot_20240819_211808_Instagram.jpg" },
+          { type: "image", content: "/Screenshot_20240819_211814_Instagram.jpg" },
+          { type: "image", content: "/Screenshot_20240819_211823_Instagram.jpg" }
         ],
-        correctAnswer: "src/images/Screenshot_20240819_211814_Instagram.jpg"
+        correctAnswer: "/Screenshot_20240819_211814_Instagram.jpg"
       }
   ];
   
