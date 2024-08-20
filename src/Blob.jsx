@@ -47,7 +47,6 @@ const Blob = ({ houses }) => {
     const touch = e.touches[0];
     const { clientX, clientY } = touch;
 
-    // Convert touch position to percentage
     const x = (clientX / window.innerWidth) * 100;
     const y = (clientY / window.innerHeight) * 100;
 
@@ -72,6 +71,7 @@ const Blob = ({ houses }) => {
         width: '100px',
         height: '100px',
         borderRadius: '50%',
+        zIndex: 2,
       }}>
        <img className='blobphoto' src="/simbu.jpg" alt="simbu" />
     </div>

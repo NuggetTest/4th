@@ -24,15 +24,24 @@ function App() {
     <>
     <div className='home-page'>
       <Routes>
-        <Route path="/" element={<><div><Blob houses={houses} />{houses.map((house, index) => (<House key={index} position={house.position} onTouch={house.onTouch} />))}</div><div style={{position: 'absolute', top: '120px', left: '50%', transform: 'translateX(-50%)', color: 'lightgreen', textShadow: '0 5px 5px #000', fontSize: '30px'}}>
-            Move simbu with arrow keys to help him play
-        </div></>} />
+        <Route path="/" element={
+          <>
+            <div>
+              <Blob houses={houses} />
+              {houses.map((house, index) => (<House key={index} position={house.position} onTouch={house.onTouch} />))}
+            </div>
+            <a href="/house3.html" target='_blank'>
+              <button className='button3'style={{position: 'absolute', top: '50px', left: '50%', transform: 'translateX(-50%)'}}>Click</button>
+            </a>
+            <div style={{position: 'absolute', top: '120px', left: '50%', transform: 'translateX(-50%)', color: 'lightgreen', textShadow: '0 5px 5px #000', fontSize: '30px', backgroundColor: '#121212', padding: '10px', borderRadius: '10px'}}>
+              Move simbu with arrow keys to help him play
+            </div>
+          </>} />
         <Route path="/house1" element={<Crossword />} />
         <Route path="/house2" element={<Quiz />} />
         <Route path="/house3" element={<Unscramble />} />
       </Routes>
     </div>
-    
     </>
   );
 }

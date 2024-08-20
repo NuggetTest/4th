@@ -78,7 +78,7 @@ const quizData = [
         alert(`Quiz completed! Your score: ${score}/${quizData.length}`);
       }
     };
-  
+
     return (
       <div className="quiz-container">
         <img src="/flower.png" alt="flower" style={{position: 'absolute', top: '-70px', left: '-100px', scale: '0.7'}}/>
